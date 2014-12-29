@@ -1,0 +1,83 @@
+\relax 
+\@writefile{toc}{\contentsline {section}{\numberline {1}Introduction}{1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.1}Data}{1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.2}Features}{1}}
+\@writefile{toc}{\contentsline {section}{\numberline {2}EDA}{2}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.1}Plots of Raw and Expertly Labelled Images}{2}}
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Raw images with AN radiances.\relax }}{2}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Images with expert classifications. Proportions: 39.8$\%$ unknown, 23.4$\%$ cloudy, 36.8$\%$ clear.\relax }}{2}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2}Densities of NDAI, SD and CORR}{2}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces NDAI density plot for Image 1, 2, 3 (respectively).\relax }}{3}}
+\providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
+\newlabel{}{{3}{3}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces SD density plot for Image 1, 2, 3 (respectively).\relax }}{3}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces CORR density plot for Image 1, 2, 3 (respectively).\relax }}{3}}
+\newlabel{}{{5}{3}}
+\newlabel{CorrNdai}{{6a}{3}}
+\newlabel{sub@CorrNdai}{{a}{3}}
+\newlabel{CorrSd}{{6b}{3}}
+\newlabel{sub@CorrSd}{{b}{3}}
+\newlabel{NdaiSd}{{6c}{3}}
+\newlabel{sub@NdaiSd}{{c}{3}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces Scatter plots of the pairs of features used in the analyses. Red points denote pixels that were labeled as not clouds and blue points represent cloudy pixels. This shows hope that our selected features may be able to distinguish between cloudy and icy pixels. The rounded boundaries suggest that non-linear surfaces may be necessary to separate the feature space.\relax }}{3}}
+\newlabel{fig:Scatter}{{6}{3}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.3}Mapped Features}{4}}
+\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces Mapped NDAI readings. We see good correspondence between larger values and presence of clouds.\relax }}{4}}
+\@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces Mapped SD readings. Higher values show cloud boundaries, though also show uneven terrain.\relax }}{4}}
+\@writefile{lof}{\contentsline {figure}{\numberline {9}{\ignorespaces Mapped CORR readings. Cloudy regions tend to be lighter, but not as strongly as in NDAI.\relax }}{4}}
+\@writefile{toc}{\contentsline {section}{\numberline {3}Modeling}{4}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1}QDA/LDA}{5}}
+\newlabel{12-foldROC}{{10a}{5}}
+\newlabel{sub@12-foldROC}{{a}{5}}
+\newlabel{12-foldAUC}{{10b}{5}}
+\newlabel{sub@12-foldAUC}{{b}{5}}
+\newlabel{12-foldAUCdiff}{{10c}{5}}
+\newlabel{sub@12-foldAUCdiff}{{c}{5}}
+\@writefile{lof}{\contentsline {figure}{\numberline {10}{\ignorespaces (\G@refundefinedtrue \text  {\normalfont  \bfseries  ??}\GenericWarning  {               }{LaTeX Warning: Reference `12-foldROC' on page 5 undefined}) shows the ROC curves for each of the 12 folds of cross validation and the ROC curve for the model with averaged parameters (AUC = .93). (\G@refundefinedtrue \text  {\normalfont  \bfseries  ??}\GenericWarning  {               }{LaTeX Warning: Reference `12-foldAUC' on page 5 undefined}) and (\G@refundefinedtrue \text  {\normalfont  \bfseries  ??}\GenericWarning  {               }{LaTeX Warning: Reference `12-foldAUCdiff' on page 5 undefined}) show evidence via AUC estimates that QDA performs slightly better than LDA. Note that in both analysis, fold 1 has an abnormally low AUC.\relax }}{5}}
+\newlabel{fig:qda_lda}{{10}{5}}
+\newlabel{qda1_conf}{{\caption@xref {qda1_conf}{ on input line 246}}{6}}
+\newlabel{sub@qda1_conf}{{}{6}}
+\newlabel{qda2_conf}{{\caption@xref {qda2_conf}{ on input line 250}}{6}}
+\newlabel{sub@qda2_conf}{{}{6}}
+\newlabel{qda3_conf}{{\caption@xref {qda3_conf}{ on input line 254}}{6}}
+\newlabel{sub@qda3_conf}{{}{6}}
+\@writefile{lof}{\contentsline {figure}{\numberline {11}{\ignorespaces A comparison between the output of QDA and expert labels.\relax }}{6}}
+\newlabel{fig:QDAconf}{{11}{6}}
+\newlabel{qda1}{{\caption@xref {qda1}{ on input line 264}}{6}}
+\newlabel{sub@qda1}{{}{6}}
+\newlabel{qda2}{{\caption@xref {qda2}{ on input line 268}}{6}}
+\newlabel{sub@qda2}{{}{6}}
+\newlabel{qda3}{{\caption@xref {qda3}{ on input line 272}}{6}}
+\newlabel{sub@qda3}{{}{6}}
+\@writefile{lof}{\contentsline {figure}{\numberline {12}{\ignorespaces Posterior probabilities of being a cloud as given by QDA\relax }}{6}}
+\newlabel{fig:QDA}{{12}{6}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2}Logit}{6}}
+\@writefile{lof}{\contentsline {figure}{\numberline {13}{\ignorespaces We see a minimum in misclassification rate at .38.\relax }}{7}}
+\@writefile{lof}{\contentsline {figure}{\numberline {14}{\ignorespaces Binary classifications with threshold = .38 for logit trained via 12-fold CV.\relax }}{7}}
+\@writefile{lof}{\contentsline {figure}{\numberline {15}{\ignorespaces Probabilities for logit trained via 12-fold CV.\relax }}{8}}
+\@writefile{lof}{\contentsline {figure}{\numberline {16}{\ignorespaces Classification results from logit with respect to the expert labels.\relax }}{8}}
+\newlabel{ROC}{{\caption@xref {ROC}{ on input line 315}}{9}}
+\newlabel{sub@ROC}{{}{9}}
+\newlabel{Convergence in CV}{{\caption@xref {Convergence in CV}{ on input line 319}}{9}}
+\newlabel{sub@Convergence in CV}{{}{9}}
+\@writefile{lof}{\contentsline {figure}{\numberline {17}{\ignorespaces Left: ROC Curve with AUC=.95. Right: Parameter convergence through iterations of CV. 1 - Intercept, 2 - NDAI, 3 - SD, 4 - CORR\relax }}{9}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3}Random Forest}{9}}
+\@writefile{lof}{\contentsline {figure}{\numberline {18}{\ignorespaces ROC across all 12 folds of quadrants\relax }}{9}}
+\newlabel{}{{18}{9}}
+\@writefile{lof}{\contentsline {figure}{\numberline {19}{\ignorespaces train 1 and 2, test 3: AUC: 0.8857\relax }}{10}}
+\@writefile{lof}{\contentsline {figure}{\numberline {20}{\ignorespaces train 2 and 3, test 1: AUC: 0.9757\relax }}{10}}
+\@writefile{lof}{\contentsline {figure}{\numberline {21}{\ignorespaces train 1 and 3, test 2: AUC: 0.9462\relax }}{10}}
+\@writefile{lof}{\contentsline {figure}{\numberline {22}{\ignorespaces prediction error for image 1-trained on image 2 and 3 juxtaposed with NDAI\relax }}{10}}
+\@writefile{lof}{\contentsline {figure}{\numberline {23}{\ignorespaces prediction error for image 3-trained on image 1 and 2 juxtaposed with NDAI\relax }}{10}}
+\@writefile{lof}{\contentsline {figure}{\numberline {24}{\ignorespaces Convergence of ROC training on increasing number of quadrants\relax }}{11}}
+\newlabel{}{{24}{11}}
+\@writefile{lof}{\contentsline {figure}{\numberline {25}{\ignorespaces Smoothed convergence of AUC for growing training set with 50 trees and 3 features\relax }}{11}}
+\newlabel{}{{25}{11}}
+\@writefile{lof}{\contentsline {figure}{\numberline {26}{\ignorespaces Convergence of ROC training on increasing number of quadrants in shuffled order. Shuffled randomly twice to generate two plots of AUC convergence\relax }}{11}}
+\newlabel{}{{26}{11}}
+\bibcite{notes}{1}
+\bibcite{website}{2}
+\@writefile{lof}{\contentsline {figure}{\numberline {27}{\ignorespaces Gini importance measures across folds\relax }}{12}}
+\newlabel{}{{27}{12}}
+\@writefile{toc}{\contentsline {section}{\numberline {4}Reproducibility}{12}}
+\@writefile{toc}{\contentsline {section}{\numberline {5}Conclusion}{12}}
